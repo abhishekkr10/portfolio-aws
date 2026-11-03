@@ -1,0 +1,52 @@
+{
+  "viewports": [
+    {
+      "width": 360,
+      "page": 360,
+      "nav": 328,
+      "navWidth": 328,
+      "circuit": "none",
+      "active": "#work"
+    },
+    {
+      "width": 390,
+      "page": 390,
+      "nav": 358,
+      "navWidth": 358,
+      "circuit": "none",
+      "active": "#work"
+    },
+    {
+      "width": 768,
+      "page": 768,
+      "nav": 728,
+      "navWidth": 728,
+      "circuit": "block",
+      "active": "#work"
+    },
+    {
+      "width": 1440,
+      "page": 1440,
+      "nav": 1344,
+      "navWidth": 1344,
+      "circuit": "block",
+      "active": "#work"
+    }
+  ],
+  "errors": [],
+  "pointer": "--spot-x: 402px; --spot-y: 471.484375px; --tilt-x: -0.058697635253666336deg; --tilt-y: 0.21450151057401823deg;",
+  "reduced": {
+    "stored": "true",
+    "line": "none",
+    "animations": 0
+  },
+  "persisted": "true",
+  "console": true,
+  "axe": [],
+  "osReduced": {
+    "state": "reduce",
+    "line": "none",
+    "animation": "none"
+  },
+  "blockedStorage": "true"
+}

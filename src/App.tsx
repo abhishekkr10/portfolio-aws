@@ -692,11 +692,7 @@ function JockyGraphic() {
           <small>0{i + 1}</small>
         </div>
       ))}
-      <div className="jocky-stamp">
-        HASH-LINKED
-        <br />
-        CHECKPOINTS
-      </div>
+      <div className="hash-chain" aria-label="Illustrative hash-linked checkpoints">{['01','02','03'].map((n,i)=><span key={n} style={{'--checkpoint':i} as React.CSSProperties}>#{n}<small>checkpoint</small></span>)}</div>
     </div>
   )
 }
