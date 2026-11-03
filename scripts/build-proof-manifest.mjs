@@ -25,7 +25,7 @@ for (const slug of ["aeronode", "jocky", "safetrack", "causalbench"]) {
       manifest[slug].push({
         url:
           "/" +
-          file
+          path.relative("public", file)
             .replaceAll("\\", "/")
             .split("/")
             .map(encodeURIComponent)
@@ -43,3 +43,5 @@ fs.writeFileSync(
   "src/data/proof-manifest.json",
   JSON.stringify(manifest, null, 2),
 )
+
+

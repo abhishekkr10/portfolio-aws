@@ -33,3 +33,5 @@ Updated 3 November 2026. Implementation complete; AWS hosting remains a deployme
 - AeroNode currently has only a proof PDF, so its image/video gallery is correctly hidden. Add screenshots or recordings to public/proof/aeronode to populate it.
 
 Deployment asset check: removed inherited Git LFS filters; compressed web media is stored as normal Git blobs so Amplify needs no LFS setup.
+
+Live verification 3 November: AWS URL https://main.d3uqlqzdn1kqb0.amplifyapp.com/ loads. Responsive and keyboard checks pass; live media checker caught an extra /public prefix in generated proof URLs. Fixed manifest to use paths relative to public; build and lint pass. Deployment verification pending after automatic rebuild.
