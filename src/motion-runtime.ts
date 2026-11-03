@@ -15,8 +15,8 @@ export function startMotion(){
   let pending=0,x=0,y=0
   const onMove=(e:PointerEvent)=>{if(e.pointerType!=='mouse'||!precise.matches)return;x=e.clientX;y=e.clientY;if(!pending)pending=requestAnimationFrame(()=>{pending=0;move(x,y,element.getBoundingClientRect())})}
   const onLeave=()=>{cancelAnimationFrame(pending);pending=0;reset()}
-  element.addEventListener('pointermove',onMove);element.addEventListener('pointerleave',onLeave);element.addEventListener('focusout',onLeave)
-  cleanups.push(()=>{onLeave();element.removeEventListener('pointermove',onMove);element.removeEventListener('pointerleave',onLeave);element.removeEventListener('focusout',onLeave)})
+  element.addEventListener('pointermove',onMove);element.addEventListener('pointerleave',onLeave);element.addEventListener('focusout',onLeave);element.addEventListener('focusin',onLeave)
+  cleanups.push(()=>{onLeave();element.removeEventListener('pointermove',onMove);element.removeEventListener('pointerleave',onLeave);element.removeEventListener('focusout',onLeave);element.removeEventListener('focusin',onLeave)})
  }
  cards.forEach(card=>bindPointer(card,(x,y,r)=>{card.style.setProperty('--spot-x',`${x-r.left}px`);card.style.setProperty('--spot-y',`${y-r.top}px`);card.style.setProperty('--tilt-x',`${((y-r.top)/r.height-.5)*-2}deg`);card.style.setProperty('--tilt-y',`${((x-r.left)/r.width-.5)*2}deg`)},()=>{card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg');card.style.removeProperty('--spot-x');card.style.removeProperty('--spot-y')}))
  const decodeFrames=new Set<number>()
@@ -26,5 +26,11 @@ export function startMotion(){
  headings.forEach(h=>decoder.observe(h));cleanups.push(()=>{decoder.disconnect();decodeFrames.forEach(cancelAnimationFrame);headings.forEach(finish)})
  const chip=document.querySelector<HTMLElement>('.chip-visual')
  if(chip){const stage=chip.querySelector<HTMLElement>('.chip-stage')!;const traces=Array.from(chip.querySelectorAll<SVGPathElement>('.trace-lines path'));bindPointer(chip,(x,y,r)=>{stage.style.setProperty('--rx',`${((y-r.top)/r.height-.5)*-4}deg`);stage.style.setProperty('--ry',`${((x-r.left)/r.width-.5)*5}deg`);traces.forEach(path=>{const box=path.getBoundingClientRect();path.classList.toggle('pointer-near',Math.hypot(x-(box.left+box.width/2),y-(box.top+box.height/2))<180)})},()=>{stage.style.setProperty('--rx','0deg');stage.style.setProperty('--ry','0deg');traces.forEach(p=>p.classList.remove('pointer-near'))})}
+ document.querySelectorAll<HTMLElement>('.hero-actions .button:not(.button--secondary)').forEach(button=>bindPointer(button,(x,y,r)=>{button.style.setProperty('--magnet-x',`${Math.max(-3,Math.min(3,(x-r.left-r.width/2)*.04))}px`);button.style.setProperty('--magnet-y',`${Math.max(-2,Math.min(2,(y-r.top-r.height/2)*.05))}px`)},()=>{button.style.removeProperty('--magnet-x');button.style.removeProperty('--magnet-y')}))
+ const ticker=document.querySelector<HTMLElement>('.ticker-track');let speedFrame=0,rate=1,lastY=window.scrollY,lastTime=performance.now()
+ const setRate=()=>ticker?.getAnimations().forEach(a=>a.updatePlaybackRate(rate))
+ const settle=()=>{speedFrame=0;rate=1+(rate-1)*.88;setRate();if(rate>1.01)speedFrame=requestAnimationFrame(settle);else{rate=1;setRate()}}
+ const velocity=()=>{const now=performance.now();const velocity=Math.abs(window.scrollY-lastY)/Math.max(16,now-lastTime);lastY=window.scrollY;lastTime=now;rate=1+Math.min(1.5,velocity*.18);setRate();if(!speedFrame)speedFrame=requestAnimationFrame(settle)}
+ window.addEventListener('scroll',velocity,{passive:true});cleanups.push(()=>{cancelAnimationFrame(speedFrame);window.removeEventListener('scroll',velocity);rate=1;setRate()})
  return ()=>cleanups.reverse().forEach(fn=>fn())
 }
