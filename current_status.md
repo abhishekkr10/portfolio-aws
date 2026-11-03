@@ -39,3 +39,5 @@ Live verification 3 November: AWS URL https://main.d3uqlqzdn1kqb0.amplifyapp.com
 Resume updated 3 November: one-page PDF revised from original resume and current source repositories; CausalBench and live portfolio link added, benchmark scope retained. Rendered and visually checked; public download replaced.
 
 Resume revision: phone number, first-year CGPA 8.4/10, KV IIT Kanpur XII 89% and X 89.4% added. Project order AeroNode, SafeTrack, CausalBench, JOCKY; visible repository URLs and three skills groups. One-page PDF rendered and visually verified.
+
+Resume final wording updated per user: AeroNode, CausalBench, SafeTrack, JOCKY order; SafeTrack team attribution and individual contributions; full school name and expected graduation wording. One-page render verified.
