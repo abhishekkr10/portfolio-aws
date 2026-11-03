@@ -41,3 +41,5 @@ Resume updated 3 November: one-page PDF revised from original resume and current
 Resume revision: phone number, first-year CGPA 8.4/10, KV IIT Kanpur XII 89% and X 89.4% added. Project order AeroNode, SafeTrack, CausalBench, JOCKY; visible repository URLs and three skills groups. One-page PDF rendered and visually verified.
 
 Resume final wording updated per user: AeroNode, CausalBench, SafeTrack, JOCKY order; SafeTrack team attribution and individual contributions; full school name and expected graduation wording. One-page render verified.
+
+Resume header simplified to clickable GitHub, LinkedIn and Portfolio labels; project URLs remain visible. All 8 PDF link annotations verified and one-page render checked.
