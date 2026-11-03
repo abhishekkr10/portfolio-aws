@@ -45,3 +45,5 @@ Resume final wording updated per user: AeroNode, CausalBench, SafeTrack, JOCKY o
 Resume header simplified to clickable GitHub, LinkedIn and Portfolio labels; project URLs remain visible. All 8 PDF link annotations verified and one-page render checked.
 
 Resume matches latest user-provided wording; restored visible profile URLs and confirmed no seeking-internships sentence. One-page PDF visually checked.
+
+Resume profile replaced with user's exact requested approximately 25% wording; remaining content unchanged. One-page render verified.
