@@ -1,4 +1,4 @@
-import {MotionLayer,MotionToggle} from './MotionLayer'
+import {MotionLayer} from './MotionLayer'
 import { projects } from "./data/projects"
 
 import { ProjectDetail } from "./ProjectDetail"
@@ -251,10 +251,6 @@ function Header() {
           </a>
         ))}
       </nav>
-      <MotionToggle/><div className="nav-status">
-        <span className="status-dot" />
-        OPEN TO OPPORTUNITIES
-      </div>
       <button
         className="menu-toggle"
         onClick={() => setOpen(!open)}
