@@ -11,7 +11,7 @@ export const projects = [
       "C++17",
       "ONNX Runtime"
     ],
-    "repoUrl": "https://github.com/abhishekkr10/AeroNode",
+    "repoUrl": "https://github.com/abhishekkr10/AeroNode" as string | null,
     "proofFolder": "/proof/aeronode",
     "limitation": "Windows x64 is the verified native platform.",
     "snippets": [
@@ -33,7 +33,7 @@ export const projects = [
       "FastAPI",
       "React"
     ],
-    "repoUrl": "https://github.com/abhishekkr10/jocky-forensics",
+    "repoUrl": "https://github.com/abhishekkr10/jocky-forensics" as string | null,
     "proofFolder": "/proof/jocky",
     "limitation": "See the source README for prototype limits.",
     "snippets": [
@@ -55,7 +55,7 @@ export const projects = [
       "FastAPI",
       "PostgreSQL"
     ],
-    "repoUrl": "https://github.com/inamansingh2401/tamperproject",
+    "repoUrl": "https://github.com/inamansingh2401/tamperproject" as string | null,
     "proofFolder": "/proof/safetrack",
     "limitation": "See the source README for prototype limits.",
     "snippets": [
@@ -79,7 +79,7 @@ export const projects = [
       "SQLite",
       "C++"
     ],
-    "repoUrl": "https://github.com/abhishekkr10/CausalBench",
+    "repoUrl": "https://github.com/abhishekkr10/CausalBench" as string | null,
     "proofFolder": "/proof/causalbench",
     "limitation": "Simulated actuation; hardware optional.",
     "snippets": [
@@ -91,3 +91,4 @@ export const projects = [
     ]
   }
 ] as const
+
