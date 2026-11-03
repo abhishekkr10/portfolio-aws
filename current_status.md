@@ -37,3 +37,5 @@ Deployment asset check: removed inherited Git LFS filters; compressed web media 
 Live verification 3 November: AWS URL https://main.d3uqlqzdn1kqb0.amplifyapp.com/ loads. Responsive and keyboard checks pass; live media checker caught an extra /public prefix in generated proof URLs. Fixed manifest to use paths relative to public; build and lint pass. Deployment verification pending after automatic rebuild.
 
 Resume updated 3 November: one-page PDF revised from original resume and current source repositories; CausalBench and live portfolio link added, benchmark scope retained. Rendered and visually checked; public download replaced.
+
+Resume revision: phone number, first-year CGPA 8.4/10, KV IIT Kanpur XII 89% and X 89.4% added. Project order AeroNode, SafeTrack, CausalBench, JOCKY; visible repository URLs and three skills groups. One-page PDF rendered and visually verified.
