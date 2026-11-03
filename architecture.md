@@ -6,7 +6,7 @@ Vite 8 builds the original React 19 and Tailwind PCB interface. src/main.tsx mou
 
 ## Content and provenance
 
-src/data/projects.ts is the shared project source for cards, dialogs and project console responses. Each record carries a slug, verified name/status/summary, scoped metrics, tags, repository visibility, proof location, limitation and exact code excerpt with commit-pinned provenance. AeroNode and CausalBench sources were inspected through authenticated Git access; anonymous repository access was unavailable, so no public links are rendered. JOCKY and SafeTrack public sources were verified. Contact destinations and the downloaded resume come from the previous portfolio.
+src/data/projects.ts is the shared project source for cards, dialogs and project console responses. Each record carries a slug, verified name/status/summary, scoped metrics, tags, repository visibility, proof location, limitation and exact code excerpt with commit-pinned provenance. All four repositories have verified public access. Repository and commit-pinned code links are rendered from project data. Contact destinations and the downloaded resume come from the previous portfolio.
 
 ## Proof pipeline
 

@@ -25,7 +25,7 @@ Updated 3 November 2026. Implementation complete; AWS hosting remains a deployme
 
 ## User input and remaining external actions
 
-- User confirmed plans to make AeroNode and CausalBench public. Anonymous GitHub currently cannot access them, so repository links remain hidden. Enable repoUrl in projects.ts after public access works.
+- AeroNode and CausalBench are now public: anonymous GitHub API access verified on 3 November 2026. Repository and commit-pinned code links are enabled.
 - JOCKY status resolved from README: Working local platform.
 - Tracking name resolved from supplied repo README: SafeTrack.
 - Email, GitHub, LinkedIn and resume resolved from previous portfolio; nothing further needed for contacts.
