@@ -48,6 +48,6 @@ results.axe = (await new AxeBuilder({ page }).analyze()).violations.map(
     nodes: v.nodes.map((n) => n.target),
   }),
 )
-fs.writeFileSync("qa-results.json", JSON.stringify(results, null, 2))
+fs.writeFileSync("verification/qa-results.json", JSON.stringify(results, null, 2))
 console.log(JSON.stringify(results, null, 2))
 await browser.close()

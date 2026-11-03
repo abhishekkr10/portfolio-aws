@@ -38,7 +38,7 @@ for (const url of urls) {
     results.push({ url, ok: false, error: String(e) })
   }
 }
-fs.writeFileSync("link-results.json", JSON.stringify(results, null, 2))
+fs.writeFileSync("verification/link-results.json", JSON.stringify(results, null, 2))
 console.log(
   JSON.stringify(
     results.filter((r) => !r.ok),
