@@ -10,5 +10,14 @@ export function startMotion(){
  const cards=document.querySelectorAll<HTMLElement>('.project')
  const visibility=new IntersectionObserver(entries=>entries.forEach(e=>e.target.classList.toggle('motion-visible',e.isIntersecting)),{threshold:.15})
  cards.forEach(card=>visibility.observe(card));cleanups.push(()=>{visibility.disconnect();cards.forEach(c=>c.classList.remove('motion-visible'))})
+ const precise=window.matchMedia('(hover: hover) and (pointer: fine)')
+ const bindPointer=(element:HTMLElement,move:(x:number,y:number,rect:DOMRect)=>void,reset:()=>void)=>{
+  let pending=0,x=0,y=0
+  const onMove=(e:PointerEvent)=>{if(e.pointerType!=='mouse'||!precise.matches)return;x=e.clientX;y=e.clientY;if(!pending)pending=requestAnimationFrame(()=>{pending=0;move(x,y,element.getBoundingClientRect())})}
+  const onLeave=()=>{cancelAnimationFrame(pending);pending=0;reset()}
+  element.addEventListener('pointermove',onMove);element.addEventListener('pointerleave',onLeave);element.addEventListener('focusout',onLeave)
+  cleanups.push(()=>{onLeave();element.removeEventListener('pointermove',onMove);element.removeEventListener('pointerleave',onLeave);element.removeEventListener('focusout',onLeave)})
+ }
+ cards.forEach(card=>bindPointer(card,(x,y,r)=>{card.style.setProperty('--spot-x',`${x-r.left}px`);card.style.setProperty('--spot-y',`${y-r.top}px`);card.style.setProperty('--tilt-x',`${((y-r.top)/r.height-.5)*-2}deg`);card.style.setProperty('--tilt-y',`${((x-r.left)/r.width-.5)*2}deg`)},()=>{card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg');card.style.removeProperty('--spot-x');card.style.removeProperty('--spot-y')}))
  return ()=>cleanups.reverse().forEach(fn=>fn())
 }
