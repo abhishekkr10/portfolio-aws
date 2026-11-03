@@ -17,8 +17,8 @@ export const projects = [
     "snippets": [
       {
         "path": "runtime/src/staged_model_runner.cpp",
-        "url": "https://github.com/abhishekkr10/AeroNode/blob/b9c914ab850c8183b0777ee677ca49d05a102844/runtime/src/staged_model_runner.cpp#L19-L30",
-        "code": "    if (i != 0) out << ',';\n    out << shape[i];\n  }\n  out << ']';\n  return out.str();\n}\n\nstd::size_t CheckedElementCount(const std::vector<std::int64_t>& shape) {\n  if (shape.empty()) throw std::invalid_argument(\"Tensor shape is empty\");\n  std::size_t count = 1;\n  for (const auto dim : shape) {\n    if (dim <= 0) throw std::invalid_argument(\"Tensor dimensions must be positive: \" + ShapeString(shape));"
+        "url": "https://github.com/abhishekkr10/AeroNode/blob/b9c914ab850c8183b0777ee677ca49d05a102844/runtime/src/staged_model_runner.cpp#L412-L430",
+        "code": "    trace.output_shapes.reserve(outputs.size());\n    trace.sample_evaluations.reserve(static_cast<std::size_t>(shape[0]));\n    for (const auto& output : outputs) trace.output_shapes.push_back(output.GetTensorTypeAndShapeInfo().GetShape());\n    const auto& logits_tensor = outputs.back();\n    const float* logits = logits_tensor.GetTensorData<float>();\n    const double elapsed_ms = std::chrono::duration<double, std::milli>(\n        std::chrono::steady_clock::now() - start).count();\n    bool all_exit = true;\n    for (std::int64_t sample = 0; sample < shape[0]; ++sample) {\n      const auto metrics = ComputePredictionMetrics(logits + static_cast<std::size_t>(sample) * 10, 10);\n      if (!std::isfinite(metrics.entropy) || !std::isfinite(metrics.confidence)) {\n        throw std::runtime_error(\"Non-finite prediction metrics in stage_\" + std::to_string(stage + 1));\n      }\n      trace.sample_evaluations.push_back(policy.EvaluateStage(metrics, trace.stage_index, state, elapsed_ms));\n      all_exit = all_exit && trace.sample_evaluations.back().exited;\n    }\n    if (all_exit) {\n      result.selected_exit = trace.stage_index;\n      result.output_shape = trace.output_shapes.back();"
       }
     ]
   },

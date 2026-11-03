@@ -1,0 +1,9 @@
+{
+  "focusTrapped": true,
+  "lightbox": true,
+  "imageEsc": true,
+  "dialogEsc": true,
+  "focusReturned": true,
+  "proofCommand": true,
+  "mobileMenu": true
+}
