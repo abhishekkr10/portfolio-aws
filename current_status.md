@@ -57,3 +57,5 @@ Integrated the supplied Figma export's case-study panel design without replacing
 Evidence inventory: AeroNode has a labelled preview and download of the supplied PDF guide (not a run recording); JOCKY has 9 screenshots and one recording; SafeTrack 13 screenshots and one recording; CausalBench 6 screenshots and one recording. Original recording folders remain unchanged.
 
 Validation: build and ESLint/TypeScript pass; actual image decoding and video playback pass for every project at 360/390/768/1440 px; no panel horizontal overflow. Keyboard focus trap, nested lightbox Escape, focus return, proof command and mobile menu pass. Case-study axe scan reports zero violations. Latest revised resume matches the public download byte for byte. Evidence in verification/proof-results.json and case-study screenshots.
+
+Resume updated with exact latest profile, merged AeroNode benchmark bullet, user-provided project dates aligned right, shortened JOCKY and ruled section headings. One-page PDF visually verified.
