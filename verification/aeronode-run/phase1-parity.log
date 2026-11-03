@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "C:\AeroNode\tests\verify_phase1.py", line 68, in <module>
+    main()
+    ~~~~^^
+  File "C:\AeroNode\tests\verify_phase1.py", line 27, in main
+    completed = subprocess.run(
+        [
+    ...<8 lines>...
+        text=True,
+    )
+  File "C:\Users\abhis\AppData\Local\Programs\Python\Python313\Lib\subprocess.py", line 577, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['C:\\AeroNode\\output\\portfolio-test-20261103-130753\\build\\runtime\\aeronode_runtime.exe', '--model', 'C:\\AeroNode\\model\\artifacts\\simple_model.onnx', '--iterations', '500']' returned non-zero exit status 1.

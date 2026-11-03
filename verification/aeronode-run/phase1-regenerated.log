@@ -1,0 +1,8 @@
+{
+  "status": "verified",
+  "max_abs_error": 1.4901161193847656e-08,
+  "predicted_class": 1,
+  "average_latency_ms": 0.0045622,
+  "p95_latency_ms": 0.0046,
+  "iterations": 500
+}
