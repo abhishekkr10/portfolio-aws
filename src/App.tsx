@@ -1,3 +1,4 @@
+import {MotionLayer,MotionToggle} from './MotionLayer'
 import { projects } from "./data/projects"
 
 import { ProjectDetail } from "./ProjectDetail"
@@ -250,7 +251,7 @@ function Header() {
           </a>
         ))}
       </nav>
-      <div className="nav-status">
+      <MotionToggle/><div className="nav-status">
         <span className="status-dot" />
         OPEN TO OPPORTUNITIES
       </div>
@@ -280,6 +281,7 @@ function ChipVisual() {
   const visualRef = useRef<HTMLDivElement>(null)
 
   const onMove = (event: React.PointerEvent<HTMLDivElement>) => {
+    if(event.pointerType !== 'mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion === 'reduce') return
     const box = event.currentTarget.getBoundingClientRect()
 
     const x = (event.clientX - box.left) / box.width - 0.5
@@ -1208,7 +1210,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="progress" ref={progressRef} />
-      <div className="ambient-grid" aria-hidden="true" />
+      <MotionLayer/><div className="ambient-grid" aria-hidden="true" />
       <a className="skip-link" href="#about">
         Skip to content
       </a>
