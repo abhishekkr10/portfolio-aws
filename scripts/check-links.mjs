@@ -15,7 +15,7 @@ const urls = [
       .flat()
       .map((m) => m.url),
     "/favicon.svg",
-    "/og.svg",
+    "/og.png",
   ]),
 ]
 const results = []
@@ -48,3 +48,4 @@ console.log(
 )
 console.log("Checked", results.length)
 await browser.close()
+
