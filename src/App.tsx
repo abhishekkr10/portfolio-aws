@@ -280,23 +280,9 @@ function Header() {
 function ChipVisual() {
   const visualRef = useRef<HTMLDivElement>(null)
 
-  const onMove = (event: React.PointerEvent<HTMLDivElement>) => {
-    if(event.pointerType !== 'mouse' || matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.dataset.motion === 'reduce') return
-    const box = event.currentTarget.getBoundingClientRect()
-
-    const x = (event.clientX - box.left) / box.width - 0.5
-
-    const y = (event.clientY - box.top) / box.height - 0.5
-
-    visualRef.current?.style.setProperty("--rx", `${-y * 5}deg`)
-
-    visualRef.current?.style.setProperty("--ry", `${x * 7}deg`)
-  }
-
   return (
     <div
       className="chip-visual"
-      onPointerMove={onMove}
       onPointerLeave={() => {
         visualRef.current?.style.setProperty("--rx", "0deg")
 
