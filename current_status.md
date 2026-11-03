@@ -59,3 +59,5 @@ Evidence inventory: AeroNode has a labelled preview and download of the supplied
 Validation: build and ESLint/TypeScript pass; actual image decoding and video playback pass for every project at 360/390/768/1440 px; no panel horizontal overflow. Keyboard focus trap, nested lightbox Escape, focus return, proof command and mobile menu pass. Case-study axe scan reports zero violations. Latest revised resume matches the public download byte for byte. Evidence in verification/proof-results.json and case-study screenshots.
 
 Resume updated with exact latest profile, merged AeroNode benchmark bullet, user-provided project dates aligned right, shortened JOCKY and ruled section headings. One-page PDF visually verified.
+
+Resume polish: varied profile verb, single-line JOCKY bullet, TS/JS skills abbreviation, aligned graduation date, and user-confirmed CausalBench Nov 2026 - Present. One-page visual and header hyperlink checks passed.
