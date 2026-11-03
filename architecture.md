@@ -21,3 +21,5 @@ The UART console is explicitly DEMO. History and completion never autofocus or n
 ## Build and verification
 
 amplify.yml selects Node 22, enables Corepack, installs the frozen pnpm lockfile and publishes dist. ESLint and TypeScript run through pnpm lint. Browser scripts in scripts/ verify viewport sizes, console interaction, keyboard dialogs, accessibility and destination responses against the production preview at port 4173. Lighthouse and browser reports live in verification/. Tests use the installed Microsoft Edge browser.
+
+Resume: public/Abhishek-Kumar-Singh-Resume.pdf is a static one-page PDF, updated from the user's original resume and verified repository evidence. Source links and portfolio URL are clickable.
