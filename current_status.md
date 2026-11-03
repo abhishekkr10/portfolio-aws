@@ -31,3 +31,5 @@ Updated 3 November 2026. Implementation complete; AWS hosting remains a deployme
 - Email, GitHub, LinkedIn and resume resolved from previous portfolio; nothing further needed for contacts.
 - Connect portfolio-aws to AWS Amplify to publish using amplify.yml. No AWS deployment was requested or performed.
 - AeroNode currently has only a proof PDF, so its image/video gallery is correctly hidden. Add screenshots or recordings to public/proof/aeronode to populate it.
+
+Deployment asset check: removed inherited Git LFS filters; compressed web media is stored as normal Git blobs so Amplify needs no LFS setup.
