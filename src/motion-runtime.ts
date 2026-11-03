@@ -19,5 +19,10 @@ export function startMotion(){
   cleanups.push(()=>{onLeave();element.removeEventListener('pointermove',onMove);element.removeEventListener('pointerleave',onLeave);element.removeEventListener('focusout',onLeave)})
  }
  cards.forEach(card=>bindPointer(card,(x,y,r)=>{card.style.setProperty('--spot-x',`${x-r.left}px`);card.style.setProperty('--spot-y',`${y-r.top}px`);card.style.setProperty('--tilt-x',`${((y-r.top)/r.height-.5)*-2}deg`);card.style.setProperty('--tilt-y',`${((x-r.left)/r.width-.5)*2}deg`)},()=>{card.style.setProperty('--tilt-x','0deg');card.style.setProperty('--tilt-y','0deg');card.style.removeProperty('--spot-x');card.style.removeProperty('--spot-y')}))
+ const decodeFrames=new Set<number>()
+ const headings=Array.from(document.querySelectorAll<HTMLElement>('.section h2,.contact h2'))
+ const finish=(h:HTMLElement)=>{h.classList.remove('decoding');delete h.dataset.decode}
+ const decoder=new IntersectionObserver(entries=>entries.forEach(e=>{if(!e.isIntersecting)return;decoder.unobserve(e.target);const h=e.target as HTMLElement;if(h.dataset.decoded)return;const text=h.textContent||'';h.setAttribute('aria-label',text);h.classList.add('decoding');let started=0,last=0;const tick=(now:number)=>{if(!started)started=now;const t=Math.min(1,(now-started)/380);if(now-last>40){h.dataset.decode=Array.from(text).map((ch,i)=>i<text.length*t||/\s/.test(ch)?ch:'0123456789ABCDEF'[(i+Math.floor(t*30))%16]).join('');last=now}if(t<1){const id=requestAnimationFrame(n=>{decodeFrames.delete(id);tick(n)});decodeFrames.add(id)}else{finish(h);h.dataset.decoded='true'}};const id=requestAnimationFrame(n=>{decodeFrames.delete(id);tick(n)});decodeFrames.add(id)}),{threshold:.7})
+ headings.forEach(h=>decoder.observe(h));cleanups.push(()=>{decoder.disconnect();decodeFrames.forEach(cancelAnimationFrame);headings.forEach(finish)})
  return ()=>cleanups.reverse().forEach(fn=>fn())
 }

@@ -7,3 +7,4 @@ html[data-motion="reduce"] *,html[data-motion="reduce"] *::before,html[data-moti
 html[data-motion="reduce"] .safe-pipeline::after{display:none}@media(prefers-reduced-motion:reduce){.safe-pipeline::after{display:none}}
 @media(hover:hover) and (pointer:fine){html[data-motion="full"] .project::after{background:radial-gradient(260px circle at var(--spot-x,50%) var(--spot-y,50%),#6ef2a00d,transparent 75%);transform:none;transition:opacity .25s}.project:focus-within{border-color:var(--copper)}}
 html[data-motion="reduce"] .project::after{display:none}
+.decoding{position:relative;color:transparent!important}.decoding em{color:transparent!important}.decoding::after{content:attr(data-decode);position:absolute;inset:0;color:var(--white);overflow:hidden;pointer-events:none;letter-spacing:inherit;font:inherit}
