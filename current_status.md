@@ -47,3 +47,5 @@ Resume header simplified to clickable GitHub, LinkedIn and Portfolio labels; pro
 Resume matches latest user-provided wording; restored visible profile URLs and confirmed no seeking-internships sentence. One-page PDF visually checked.
 
 Resume profile replaced with user's exact requested approximately 25% wording; remaining content unchanged. One-page render verified.
+
+Resume changes 2/5/9 applied: consistent 25.2% profile metric, separated AeroNode result/setup sentences, clickable labelled profile links. One-page visual and hyperlink checks passed.
