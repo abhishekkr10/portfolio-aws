@@ -653,7 +653,7 @@ function Capabilities() {
 
 function AeroGraphic() {
   return (
-    <div className="aero-graphic">
+    <div className="aero-graphic"><span className="motion-label">RECORDED · ENTROPY EXIT REPLAY</span>
       <div className="aero-grid">
         {[1, 2, 3, 4].map((n) => (
           <i key={n} />
@@ -691,7 +691,7 @@ function JockyGraphic() {
   ]
 
   return (
-    <div className="jocky-graphic">
+    <div className="jocky-graphic"><span className="motion-label">ILLUSTRATIVE · EVIDENCE HASH CHAIN</span>
       <svg viewBox="0 0 100 100" preserveAspectRatio="none">
         <path d="M15 24 43 15 66 32 42 61 72 75M42 61 18 78M15 24 42 61M66 32 72 75" />
       </svg>
@@ -707,9 +707,9 @@ function JockyGraphic() {
         </div>
       ))}
       <div className="jocky-stamp">
-        SYNTHETIC
+        HASH-LINKED
         <br />
-        EVIDENCE
+        CHECKPOINTS
       </div>
     </div>
   )
@@ -717,7 +717,7 @@ function JockyGraphic() {
 
 function SafeGraphic() {
   return (
-    <div className="safe-graphic">
+    <div className="safe-graphic"><span className="motion-label">ILLUSTRATIVE · SIGNED PACKET</span>
       <div className="safe-device">
         <span className="status-dot" />
         <small>DEVICE / 04</small>
@@ -734,7 +734,7 @@ function SafeGraphic() {
         </div>
       </div>
       <div className="safe-pipeline">
-        {["SENSE", "SIGN", "UPLINK", "VERIFY"].map((step, i) => (
+        {["DEVICE", "GATEWAY", "DASHBOARD"].map((step, i) => (
           <div key={step}>
             <i />
             <span>0{i + 1}</span>
