@@ -1,5 +1,11 @@
 {
-  "aeronode": [],
+  "aeronode": [
+    {
+      "url": "/proof/aeronode/Testing%20guide%20-%20document%20preview.png",
+      "caption": "Testing guide - document preview",
+      "video": false
+    }
+  ],
   "jocky": [
     {
       "url": "/proof/jocky/Recording%202026-11-02%20211014.web.mp4",

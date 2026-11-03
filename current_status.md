@@ -49,3 +49,11 @@ Resume matches latest user-provided wording; restored visible profile URLs and c
 Resume profile replaced with user's exact requested approximately 25% wording; remaining content unchanged. One-page render verified.
 
 Resume changes 2/5/9 applied: consistent 25.2% profile metric, separated AeroNode result/setup sentences, clickable labelled profile links. One-page visual and hyperlink checks passed.
+
+## Case-study proof integration - 3 November 2026
+
+Integrated the supplied Figma export's case-study panel design without replacing the verified homepage, contacts, console or resume. Added shared case-study stages/notes, large contained previews, screenshot thumbnails, recorded video selectors, poster images, image lightbox navigation, loading-error recovery, code and source actions. All media paths use /proof rather than /public/proof.
+
+Evidence inventory: AeroNode has a labelled preview and download of the supplied PDF guide (not a run recording); JOCKY has 9 screenshots and one recording; SafeTrack 13 screenshots and one recording; CausalBench 6 screenshots and one recording. Original recording folders remain unchanged.
+
+Validation: build and ESLint/TypeScript pass; actual image decoding and video playback pass for every project at 360/390/768/1440 px; no panel horizontal overflow. Keyboard focus trap, nested lightbox Escape, focus return, proof command and mobile menu pass. Case-study axe scan reports zero violations. Latest revised resume matches the public download byte for byte. Evidence in verification/proof-results.json and case-study screenshots.

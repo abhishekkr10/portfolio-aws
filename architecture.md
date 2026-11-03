@@ -23,3 +23,7 @@ The UART console is explicitly DEMO. History and completion never autofocus or n
 amplify.yml selects Node 22, enables Corepack, installs the frozen pnpm lockfile and publishes dist. ESLint and TypeScript run through pnpm lint. Browser scripts in scripts/ verify viewport sizes, console interaction, keyboard dialogs, accessibility and destination responses against the production preview at port 4173. Lighthouse and browser reports live in verification/. Tests use the installed Microsoft Edge browser.
 
 Resume: public/Abhishek-Kumar-Singh-Resume.pdf is a static one-page PDF, updated from the user's original resume and verified repository evidence. Source links and portfolio URL are clickable.
+
+## Case-study presentation
+
+src/project-detail.css scopes the supplied Figma panel styling to ProjectDetail, preserving homepage CSS. Case-study stages and notes now live alongside project metadata in projects.ts. The curated viewer switches between existing screenshots and compressed recordings, with native video controls and image posters. A nested native dialog supports full-size images and next/previous navigation. AeroNode's only supplied proof is a testing guide: a clearly labelled first-page preview and PDF download appear instead of an invented recording. scripts/check-proof.mjs verifies browser image decoding and video playback across all four viewport sizes; scripts/check-case-accessibility.mjs checks the panel with axe.
