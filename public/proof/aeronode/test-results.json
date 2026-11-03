@@ -1,0 +1,126 @@
+{
+  "date": "3 November 2026",
+  "scope": "Fresh local Phase 1-3 validation. This older checkout does not contain the later adaptive runtime shown in the GitHub source excerpt; these tests do not re-measure adaptive latency.",
+  "commit": "6129849f622267cb0b89dcdf94247c7b077093ce",
+  "device": "Intel(R) Core(TM) Ultra 5 225H",
+  "stages": [
+    {
+      "name": "Dependency check",
+      "status": "PASS"
+    },
+    {
+      "name": "Fresh C++ configure and build",
+      "status": "PASS"
+    },
+    {
+      "name": "Python/C++ parity \u00b7 500 iterations",
+      "status": "PASS \u00b7 regenerated tiny model"
+    },
+    {
+      "name": "Automated model/export tests",
+      "status": "PASS \u00b7 4 tests"
+    },
+    {
+      "name": "Full checkpoint validation",
+      "status": "PASS \u00b7 3,925 images"
+    },
+    {
+      "name": "Fresh four-output ONNX export",
+      "status": "PASS \u00b7 10 classes / 10 images"
+    },
+    {
+      "name": "Accepted artifact hashes",
+      "status": "PASS \u00b7 matching reference"
+    }
+  ],
+  "parity": {
+    "status": "verified",
+    "max_abs_error": 1.4901161193847656e-08,
+    "predicted_class": 1,
+    "average_latency_ms": 0.0045622,
+    "p95_latency_ms": 0.0046,
+    "iterations": 500
+  },
+  "validation": {
+    "weighted_loss": 0.9684637858153908,
+    "samples": 3925,
+    "duration_seconds": 53.18823450000491,
+    "exits": [
+      {
+        "loss": 1.378888188896665,
+        "accuracy": 0.5727388535031848,
+        "correct": 2248,
+        "samples": 3925
+      },
+      {
+        "loss": 1.0535560654075282,
+        "accuracy": 0.6672611464968153,
+        "correct": 2619,
+        "samples": 3925
+      },
+      {
+        "loss": 0.8757500534300592,
+        "accuracy": 0.7179617834394905,
+        "correct": 2818,
+        "samples": 3925
+      },
+      {
+        "loss": 0.8299545285048758,
+        "accuracy": 0.7309554140127389,
+        "correct": 2869,
+        "samples": 3925
+      }
+    ]
+  },
+  "onnx": {
+    "samples": 10,
+    "hash": "0cc08e571383279798c00019f0079bcbc107db49a1fe8efca444a4b754f35051",
+    "parity": [
+      {
+        "name": "exit_1_logits",
+        "shape": [
+          10,
+          10
+        ],
+        "max_abs_error": 2.384185791015625e-06,
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.0001,
+        "parity": true
+      },
+      {
+        "name": "exit_2_logits",
+        "shape": [
+          10,
+          10
+        ],
+        "max_abs_error": 9.5367431640625e-07,
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.0001,
+        "parity": true
+      },
+      {
+        "name": "exit_3_logits",
+        "shape": [
+          10,
+          10
+        ],
+        "max_abs_error": 1.430511474609375e-06,
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.0001,
+        "parity": true
+      },
+      {
+        "name": "exit_4_logits",
+        "shape": [
+          10,
+          10
+        ],
+        "max_abs_error": 1.6689300537109375e-06,
+        "absolute_tolerance": 1e-05,
+        "relative_tolerance": 0.0001,
+        "parity": true
+      }
+    ]
+  },
+  "repair": "Original simple_model.onnx failed the expected tensor-shape check. Preserved it; exported a new deterministic tiny model into the unique test folder, then passed Python/C++ parity. Tiny-model timing is not an adaptive classifier benchmark."
+}

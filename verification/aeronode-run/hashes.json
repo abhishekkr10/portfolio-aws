@@ -1,0 +1,12 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0CC08E571383279798C00019F0079BCBC107DB49A1FE8EFCA444A4B754F35051",
+    "Path": "C:\\AeroNode\\model\\artifacts\\phase3\\multi_exit_imagenette.onnx"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "32FB2975BCFE14D7311BC91DB1553442391468D52C74F34A4EFEB9D2AEF27366",
+    "Path": "C:\\AeroNode\\model\\artifacts\\phase2-imagenette-5ep\\best_final_exit.pt"
+  }
+]

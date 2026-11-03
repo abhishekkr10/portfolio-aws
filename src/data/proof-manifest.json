@@ -1,169 +1,163 @@
 {
-  "aeronode": [
-    {
-      "url": "/proof/aeronode/Testing%20guide%20-%20document%20preview.png",
-      "caption": "Testing guide - document preview",
-      "video": false
-    }
-  ],
+  "aeronode": [],
   "jocky": [
     {
       "url": "/proof/jocky/Recording%202026-11-02%20211014.web.mp4",
-      "caption": "Recording 2026-11-02 211014.web",
+      "caption": "Synthetic investigation walkthrough",
       "video": true
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210344.png",
-      "caption": "Screenshot 2026-11-02 210344",
+      "caption": "Forensic analysis overview",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210400.png",
-      "caption": "Screenshot 2026-11-02 210400",
+      "caption": "Investigation workflow and evidence provenance",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210412.png",
-      "caption": "Screenshot 2026-11-02 210412",
+      "caption": "Synthetic lab run and query results",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210715.png",
-      "caption": "Screenshot 2026-11-02 210715",
+      "caption": "Investigation workspace sign-in",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210833.png",
-      "caption": "Screenshot 2026-11-02 210833",
+      "caption": "Synthetic investigation overview",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20210848.png",
-      "caption": "Screenshot 2026-11-02 210848",
+      "caption": "Evidence relationships and telemetry coverage",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20211226.png",
-      "caption": "Screenshot 2026-11-02 211226",
+      "caption": "JOCKY script editor and execution controls",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20211245.png",
-      "caption": "Screenshot 2026-11-02 211245",
+      "caption": "Detection findings and rule matches",
       "video": false
     },
     {
       "url": "/proof/jocky/Screenshot%202026-11-02%20211256.png",
-      "caption": "Screenshot 2026-11-02 211256",
+      "caption": "Evidence chain integrity checks",
       "video": false
     }
   ],
   "safetrack": [
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20194451.png",
-      "caption": "Screenshot 2026-11-02 194451",
+      "caption": "Admin operations overview",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20194608.png",
-      "caption": "Screenshot 2026-11-02 194608",
+      "caption": "Shipment management",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20194657.png",
-      "caption": "Screenshot 2026-11-02 194657",
+      "caption": "Vehicle fleet",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20194709.png",
-      "caption": "Screenshot 2026-11-02 194709",
+      "caption": "Vehicle details and assigned shipments",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20194727.png",
-      "caption": "Screenshot 2026-11-02 194727",
+      "caption": "Shipment telemetry and safety ledger",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20195158.png",
-      "caption": "Screenshot 2026-11-02 195158",
+      "caption": "Sensor readings and security events",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20195213.png",
-      "caption": "Screenshot 2026-11-02 195213",
+      "caption": "Alerts and incident management",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20195233.png",
-      "caption": "Screenshot 2026-11-02 195233",
+      "caption": "System reports and fleet analytics",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20195253.png",
-      "caption": "Screenshot 2026-11-02 195253",
+      "caption": "Users and access control",
       "video": false
     },
     {
       "url": "/proof/safetrack/Admin%20Panel/Screenshot%202026-11-02%20195912.png",
-      "caption": "Screenshot 2026-11-02 195912",
+      "caption": "System settings",
       "video": false
     },
     {
       "url": "/proof/safetrack/live%20demonstration.web.mp4",
-      "caption": "live demonstration.web",
+      "caption": "Shipment monitoring demonstration",
       "video": true
     },
     {
       "url": "/proof/safetrack/User%20panel/Screenshot%202026-11-02%20200701.png",
-      "caption": "Screenshot 2026-11-02 200701",
+      "caption": "Shipment overview and route progress",
       "video": false
     },
     {
       "url": "/proof/safetrack/User%20panel/Screenshot%202026-11-02%20200711.png",
-      "caption": "Screenshot 2026-11-02 200711",
+      "caption": "Shipment checkpoint and alerts",
       "video": false
     },
     {
       "url": "/proof/safetrack/User%20panel/Screenshot%202026-11-02%20200723.png",
-      "caption": "Screenshot 2026-11-02 200723",
+      "caption": "Shipment conditions and sensor readings",
       "video": false
     }
   ],
   "causalbench": [
     {
       "url": "/proof/causalbench/Recording%202026-11-02%20230728.web.mp4",
-      "caption": "Recording 2026-11-02 230728.web",
+      "caption": "Controller experiment replay",
       "video": true
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-02%20230810.png",
-      "caption": "Screenshot 2026-11-02 230810",
+      "caption": "Event ledger and controller comparison",
       "video": false
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-02%20230820.png",
-      "caption": "Screenshot 2026-11-02 230820",
+      "caption": "Controller configuration and experiment builder",
       "video": false
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-02%20230923.png",
-      "caption": "Screenshot 2026-11-02 230923",
+      "caption": "Fault studies and failure minimization",
       "video": false
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-02%20231032.png",
-      "caption": "Screenshot 2026-11-02 231032",
+      "caption": "Saved experiments and evidence export",
       "video": false
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-02%20231047.png",
-      "caption": "Screenshot 2026-11-02 231047",
+      "caption": "Decision replay and disagreement analysis",
       "video": false
     },
     {
       "url": "/proof/causalbench/Screenshot%202026-11-03%20082340.png",
-      "caption": "Screenshot 2026-11-03 082340",
+      "caption": "Distance trace and controller decisions",
       "video": false
     }
   ]

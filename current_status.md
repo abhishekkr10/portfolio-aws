@@ -61,3 +61,9 @@ Validation: build and ESLint/TypeScript pass; actual image decoding and video pl
 Resume updated with exact latest profile, merged AeroNode benchmark bullet, user-provided project dates aligned right, shortened JOCKY and ruled section headings. One-page PDF visually verified.
 
 Resume polish: varied profile verb, single-line JOCKY bullet, TS/JS skills abbreviation, aligned graduation date, and user-confirmed CausalBench Nov 2026 - Present. One-page visual and header hyperlink checks passed.
+
+## Proof corrections - 3 November 2026
+
+Supersedes the earlier document-preview implementation. Removed AeroNode's PDF thumbnail from the gallery and executed the supplied runbook against the existing local Phase 1-3 implementation. Fresh results are rendered as native result panels with stage outcomes, per-exit accuracy, parity and JSON evidence; no runbook is displayed. Initial tiny-model shape failure and recovery are disclosed. Later adaptive benchmark results were not rerun and are explicitly distinguished.
+
+Replaced filename captions with image-specific descriptions after inspecting all 28 screenshots. Complete source functions and project-specific explanations now replace truncated excerpts, with correct commit-pinned line ranges. Fresh browser verification passed all 16 project/viewport combinations, actual image decoding and all video playback; panel axe scan has no violations. Build and lint pass.

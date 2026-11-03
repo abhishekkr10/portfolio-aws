@@ -27,3 +27,7 @@ Resume: public/Abhishek-Kumar-Singh-Resume.pdf is a static one-page PDF, updated
 ## Case-study presentation
 
 src/project-detail.css scopes the supplied Figma panel styling to ProjectDetail, preserving homepage CSS. Case-study stages and notes now live alongside project metadata in projects.ts. The curated viewer switches between existing screenshots and compressed recordings, with native video controls and image posters. A nested native dialog supports full-size images and next/previous navigation. AeroNode's only supplied proof is a testing guide: a clearly labelled first-page preview and PDF download appear instead of an invented recording. scripts/check-proof.mjs verifies browser image decoding and video playback across all four viewport sizes; scripts/check-case-accessibility.mjs checks the panel with axe.
+
+## Measured results and descriptive evidence
+
+proof-captions.json maps inspected image/video paths to user-facing descriptions. The prebuild manifest uses those captions. AeroNode now renders src/data/aeronode-results.json from actual local runbook execution; a downloadable sanitized summary lives at public/proof/aeronode/test-results.json. Raw compact verification artifacts are retained in verification/aeronode-run; no model binaries are committed. The old guide preview is removed. Each project snippet is a complete real function, with a source explanation and commit-pinned line range.

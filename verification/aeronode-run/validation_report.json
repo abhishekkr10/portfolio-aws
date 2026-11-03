@@ -1,0 +1,56 @@
+{
+  "validated_at": "2026-11-03T07:39:16.463687+00:00",
+  "checkpoint": "C:\\AeroNode\\model\\artifacts\\phase2-imagenette-5ep\\best_final_exit.pt",
+  "checkpoint_epoch": 5,
+  "device": "cpu",
+  "archive_sha256": "64d0c4859f35a461889e0147755a999a48b49bf38a7e0f9bd27003f10db02fe5",
+  "class_to_idx": {
+    "n01440764": 0,
+    "n02102040": 1,
+    "n02979186": 2,
+    "n03000684": 3,
+    "n03028079": 4,
+    "n03394916": 5,
+    "n03417042": 6,
+    "n03425413": 7,
+    "n03445777": 8,
+    "n03888257": 9
+  },
+  "exit_weights": [
+    0.15,
+    0.2,
+    0.25,
+    0.4
+  ],
+  "validation": {
+    "weighted_loss": 0.9684637858153908,
+    "samples": 3925,
+    "duration_seconds": 53.18823450000491,
+    "exits": [
+      {
+        "loss": 1.378888188896665,
+        "accuracy": 0.5727388535031848,
+        "correct": 2248,
+        "samples": 3925
+      },
+      {
+        "loss": 1.0535560654075282,
+        "accuracy": 0.6672611464968153,
+        "correct": 2619,
+        "samples": 3925
+      },
+      {
+        "loss": 0.8757500534300592,
+        "accuracy": 0.7179617834394905,
+        "correct": 2818,
+        "samples": 3925
+      },
+      {
+        "loss": 0.8299545285048758,
+        "accuracy": 0.7309554140127389,
+        "correct": 2869,
+        "samples": 3925
+      }
+    ]
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "model_path": "C:\\AeroNode\\output\\portfolio-test-20261103-130753\\multi_exit_imagenette.onnx",
+  "model_size_bytes": 11217740,
+  "model_sha256": "0cc08e571383279798c00019f0079bcbc107db49a1fe8efca444a4b754f35051",
+  "source_checkpoint": "C:\\AeroNode\\model\\artifacts\\phase2-imagenette-5ep\\best_final_exit.pt",
+  "source_checkpoint_sha256": "32fb2975bcfe14d7311bc91db1553442391468d52c74f34a4efeb9d2aef27366",
+  "source_checkpoint_epoch": 5,
+  "verification_sample_count": 10,
+  "verification_targets": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "verification_paths": [
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n01440764\\ILSVRC2012_val_00009111.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n02102040\\ILSVRC2012_val_00004650.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n02979186\\ILSVRC2012_val_00008651.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03000684\\ILSVRC2012_val_00004262.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03028079\\ILSVRC2012_val_00003351.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03394916\\ILSVRC2012_val_00001492.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03417042\\ILSVRC2012_val_00002210.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03425413\\ILSVRC2012_val_00000732.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03445777\\ILSVRC2012_val_00008161.JPEG",
+    "C:\\AeroNode\\data\\imagenette2-160\\val\\n03888257\\ILSVRC2012_val_00001440.JPEG"
+  ],
+  "graph": {
+    "ir_version": 8,
+    "opset_imports": {
+      "ai.onnx": 17
+    },
+    "inputs": {
+      "input": [
+        "batch_size",
+        3,
+        128,
+        128
+      ]
+    },
+    "outputs": {
+      "exit_1_logits": [
+        "batch_size",
+        10
+      ],
+      "exit_2_logits": [
+        "batch_size",
+        10
+      ],
+      "exit_3_logits": [
+        "batch_size",
+        10
+      ],
+      "exit_4_logits": [
+        "batch_size",
+        10
+      ]
+    },
+    "node_count": 58,
+    "initializer_count": 48,
+    "operator_counts": {
+      "Add": 8,
+      "Conv": 20,
+      "Flatten": 4,
+      "Gemm": 4,
+      "GlobalAveragePool": 4,
+      "MaxPool": 1,
+      "Relu": 17
+    }
+  },
+  "parity": [
+    {
+      "name": "exit_1_logits",
+      "shape": [
+        10,
+        10
+      ],
+      "max_abs_error": 2.384185791015625e-06,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 0.0001,
+      "parity": true
+    },
+    {
+      "name": "exit_2_logits",
+      "shape": [
+        10,
+        10
+      ],
+      "max_abs_error": 9.5367431640625e-07,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 0.0001,
+      "parity": true
+    },
+    {
+      "name": "exit_3_logits",
+      "shape": [
+        10,
+        10
+      ],
+      "max_abs_error": 1.430511474609375e-06,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 0.0001,
+      "parity": true
+    },
+    {
+      "name": "exit_4_logits",
+      "shape": [
+        10,
+        10
+      ],
+      "max_abs_error": 1.6689300537109375e-06,
+      "absolute_tolerance": 1e-05,
+      "relative_tolerance": 0.0001,
+      "parity": true
+    }
+  ],
+  "netron": "not installed; reproducible ONNX checker/shape/runtime inspection completed"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "exitCode": 0,
+    "seconds": 1.2618732,
+    "name": "environment"
+  },
+  {
+    "exitCode": 0,
+    "seconds": 6.2157626,
+    "name": "configure"
+  },
+  {
+    "exitCode": 0,
+    "seconds": 3.5792993,
+    "name": "build"
+  },
+  {
+    "exitCode": 1,
+    "seconds": 1.8139599,
+    "name": "phase1-parity"
+  },
+  {
+    "exitCode": 0,
+    "seconds": 11.8345604,
+    "name": "model-tests"
+  },
+  {
+    "exitCode": 0,
+    "seconds": 58.649933,
+    "name": "full-validation"
+  },
+  {
+    "exitCode": 0,
+    "seconds": 5.5345499,
+    "name": "onnx-export"
+  }
+]

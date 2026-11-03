@@ -2,6 +2,8 @@ import fs from "node:fs"
 
 import path from "node:path"
 
+const captions = JSON.parse(fs.readFileSync('src/data/proof-captions.json', 'utf8'))
+
 const root = "public/proof",
   manifest = {}
 
@@ -30,7 +32,7 @@ for (const slug of ["aeronode", "jocky", "safetrack", "causalbench"]) {
             .split("/")
             .map(encodeURIComponent)
             .join("/"),
-        caption: path.parse(file).name.replaceAll("_", " "),
+        caption: captions[path.relative("public", file).replaceAll("\\", "/")] || path.parse(file).name.replaceAll("_", " "),
         video: /\.(mp4|webm)$/i.test(file),
       })
     }
