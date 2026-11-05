@@ -38,4 +38,4 @@ MotionLayer provides a small persistent reduced-motion toggle and decorative cir
 
 Cursor: motion-runtime owns pointer-transparent dot, follower ring and radial glow, moving via a demand-driven animation frame and stopping when settled/blurred. Cursor nodes move into native modal top layers as needed. System reduced-motion disables runtime; motion otherwise defaults on. No saved toggle preference is consulted. Input/video and keyboard interaction restore the native cursor. Hero trace geometry is cached rather than repeatedly measuring every path.
 
-Hosting: the same static Vite build is published by AWS Amplify and Vercel. Vercel project abhishek (tracksure2) serves abhisheks0.vercel.app and connects to portfolio-aws; it uses Node 22, pnpm build and dist. The AWS submission URL remains valid.
+Hosting: the same static Vite build is published by AWS Amplify and Vercel. Vercel project abhishek (tracksure2) serves abhisheks0.vercel.app and connects to abhishekkr10/portfolio; it uses Node 22, pnpm build and dist. The AWS submission URL remains valid.

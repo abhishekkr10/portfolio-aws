@@ -83,3 +83,6 @@ Replaced the portfolio resume download with the latest one-page Edge AI version,
 
 ## Vercel deployment - 5 November 2026
 Deployed the current portfolio to the existing abhishek project under tracksure2 at https://abhisheks0.vercel.app/. Replaced the old portfolio Git connection with abhishekkr10/portfolio-aws. Vite, Node 22, frozen pnpm installation and dist output are configured. AWS Amplify remains available for the hackathon. Verified four viewport widths, console, case-study dialog and byte-identical resume download on the new host.
+
+## Repository rename - 5 November 2026
+The current source is https://github.com/abhishekkr10/portfolio (renamed from portfolio-aws). Updated the local origin, portfolio README, profile README source link, and current hosting reference. Added repository description and implementation-specific topics. Historical entries retain the repository name used at the time.
