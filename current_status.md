@@ -86,3 +86,6 @@ Deployed the current portfolio to the existing abhishek project under tracksure2
 
 ## Repository rename - 5 November 2026
 The current source is https://github.com/abhishekkr10/portfolio (renamed from portfolio-aws). Updated the local origin, portfolio README, profile README source link, and current hosting reference. Added repository description and implementation-specific topics. Historical entries retain the repository name used at the time.
+
+## Netlify migration - 5 November 2026
+Personal portfolio moves to https://abhishekkrsingh-portfolio.netlify.app/. Added repository-controlled Netlify build/publish configuration to replace the raw-source production deploy. Updated published links, profile README and the resume's Portfolio hyperlink. AWS remains the hackathon deployment. Local lint/build pass.

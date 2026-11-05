@@ -6,7 +6,7 @@ The dark PCB-inspired interface was developed from a Figma Make export and integ
 
 ## Published sites
 
-- [Personal portfolio](https://abhisheks0.vercel.app/)
+- [Personal portfolio](https://abhishekkrsingh-portfolio.netlify.app/)
 - [AWS Amplify hackathon deployment](https://main.d3uqlqzdn1kqb0.amplifyapp.com/)
 - [Source repository](https://github.com/abhishekkr10/portfolio)
 
@@ -49,6 +49,7 @@ The prebuild script generates the proof manifest. Vite writes the production sit
 - `src/motion-runtime.ts`: deferred scroll and pointer interactions.
 - `scripts/build-proof-manifest.mjs`: recursive media discovery.
 - `public/proof/<slug>/`: project images and compressed recordings.
+- `netlify.toml`: Netlify build, Node/pnpm versions and hashed-asset caching.
 - `amplify.yml`: Node 22 deployment build for AWS Amplify.
 
 ## Add proof
@@ -61,7 +62,7 @@ Project source links and code provenance are maintained in `src/data/projects.ts
 
 ## Deployment
 
-Both hosts publish the same static site from this repository's `main` branch. Vercel's `abhishek` project serves the personal URL using Node 22, frozen pnpm installation, `pnpm build` and the `dist` output directory. AWS Amplify uses the checked-in `amplify.yml` and retains the hackathon URL.
+Netlify publishes the personal portfolio from this repository's `main` branch using `netlify.toml`, Node 22, pnpm and the compiled `dist` output. Hashed assets receive immutable caching. AWS Amplify uses `amplify.yml` and retains the hackathon URL.
 
 Builds and browser verification are separate checks. See `verification/`, [current status](current_status.md) and [architecture](architecture.md) for recorded checks and their scope.
 
