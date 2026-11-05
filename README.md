@@ -7,7 +7,6 @@ The dark PCB-inspired interface was developed from a Figma Make export and integ
 ## Published sites
 
 - [Personal portfolio](https://abhishekkrsingh-portfolio.netlify.app/)
-- [AWS Amplify hackathon deployment](https://main.d3uqlqzdn1kqb0.amplifyapp.com/)
 - [Source repository](https://github.com/abhishekkr10/portfolio)
 
 ## Explore

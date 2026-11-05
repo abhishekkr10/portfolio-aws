@@ -34,7 +34,7 @@ Updated 3 November 2026. Implementation complete; AWS hosting remains a deployme
 
 Deployment asset check: removed inherited Git LFS filters; compressed web media is stored as normal Git blobs so Amplify needs no LFS setup.
 
-Live verification 3 November: AWS URL https://main.d3uqlqzdn1kqb0.amplifyapp.com/ loads. Responsive and keyboard checks pass; live media checker caught an extra /public prefix in generated proof URLs. Fixed manifest to use paths relative to public; build and lint pass. Deployment verification pending after automatic rebuild.
+Live verification 3 November: AWS URL the AWS challenge deployment loads. Responsive and keyboard checks pass; live media checker caught an extra /public prefix in generated proof URLs. Fixed manifest to use paths relative to public; build and lint pass. Deployment verification pending after automatic rebuild.
 
 Resume updated 3 November: one-page PDF revised from original resume and current source repositories; CausalBench and live portfolio link added, benchmark scope retained. Rendered and visually checked; public download replaced.
 
@@ -82,10 +82,13 @@ Cursor polish: removed Reduce motion and Open to opportunities header items. Mot
 Replaced the portfolio resume download with the latest one-page Edge AI version, including MMMUT logo, school examination years, achievements and revised project bullets. Existing download URL retained.
 
 ## Vercel deployment - 5 November 2026
-Deployed the current portfolio to the existing abhishek project under tracksure2 at https://abhisheks0.vercel.app/. Replaced the old portfolio Git connection with abhishekkr10/portfolio-aws. Vite, Node 22, frozen pnpm installation and dist output are configured. AWS Amplify remains available for the hackathon. Verified four viewport widths, console, case-study dialog and byte-identical resume download on the new host.
+Deployed the current portfolio to the existing abhishek project under tracksure2 at the previous personal hosting address. Replaced the old portfolio Git connection with abhishekkr10/portfolio-aws. Vite, Node 22, frozen pnpm installation and dist output are configured. AWS Amplify remains available for the hackathon. Verified four viewport widths, console, case-study dialog and byte-identical resume download on the new host.
 
 ## Repository rename - 5 November 2026
 The current source is https://github.com/abhishekkr10/portfolio (renamed from portfolio-aws). Updated the local origin, portfolio README, profile README source link, and current hosting reference. Added repository description and implementation-specific topics. Historical entries retain the repository name used at the time.
 
 ## Netlify migration - 5 November 2026
 Personal portfolio moves to https://abhishekkrsingh-portfolio.netlify.app/. Added repository-controlled Netlify build/publish configuration to replace the raw-source production deploy. Updated published links, profile README and the resume's Portfolio hyperlink. AWS remains the hackathon deployment. Local lint/build pass.
+
+
+5 November: Made Netlify the sole published personal portfolio URL. Removed retired personal URLs from current documentation; refreshed the supplied resume hyperlink without changing its layout. Existing AWS hosting remains operational for the challenge.
