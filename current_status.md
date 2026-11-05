@@ -80,3 +80,6 @@ Cursor polish: removed Reduce motion and Open to opportunities header items. Mot
 
 ## Resume update - 5 November 2026
 Replaced the portfolio resume download with the latest one-page Edge AI version, including MMMUT logo, school examination years, achievements and revised project bullets. Existing download URL retained.
+
+## Vercel deployment - 5 November 2026
+Deployed the current portfolio to the existing abhishek project under tracksure2 at https://abhisheks0.vercel.app/. Replaced the old portfolio Git connection with abhishekkr10/portfolio-aws. Vite, Node 22, frozen pnpm installation and dist output are configured. AWS Amplify remains available for the hackathon. Verified four viewport widths, console, case-study dialog and byte-identical resume download on the new host.

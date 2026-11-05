@@ -2,6 +2,11 @@
 
 Original Figma-exported PCB interface, completed with React 19, Vite 8, TypeScript and Tailwind. Project facts come from source repositories and the earlier portfolio; recordings and simulations are labelled.
 
+## Published sites
+
+- [Personal portfolio](https://abhisheks0.vercel.app/)
+- [AWS Amplify hackathon deployment](https://main.d3uqlqzdn1kqb0.amplifyapp.com/)
+
 ## Run
 
 Use Node 22 and pnpm. Run `corepack enable`, `pnpm install --frozen-lockfile`, then `pnpm dev`. `pnpm build` generates the proof manifest and creates `dist`. `pnpm lint` runs ESLint and TypeScript.
