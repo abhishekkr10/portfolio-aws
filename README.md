@@ -4,10 +4,10 @@ Personal portfolio for embedded systems, Edge AI and IoT, with an interactive UA
 
 The dark PCB-inspired interface was developed from a Figma Make export and integrated with project data, media, keyboard interaction and deployment using Codex. Project facts and code excerpts link to their source repositories.
 
-## Published sites
+## AWS portfolio
 
-- [Personal portfolio](https://abhishekkrsingh-portfolio.netlify.app/)
-- [Source repository](https://github.com/abhishekkr10/portfolio)
+- [Personal portfolio](https://main.d3uqlqzdn1kqb0.amplifyapp.com/)
+- [Source repository](https://github.com/abhishekkr10/portfolio-aws)
 
 ## Explore
 
@@ -23,8 +23,8 @@ The console is a **DEMO**. Recorded replays are labelled **RECORDED**, and illus
 Use Node 22 and pnpm.
 
 ```sh
-git clone https://github.com/abhishekkr10/portfolio.git
-cd portfolio
+git clone https://github.com/abhishekkr10/portfolio-aws.git
+cd portfolio-aws
 corepack enable
 pnpm install --frozen-lockfile
 pnpm dev
@@ -48,7 +48,6 @@ The prebuild script generates the proof manifest. Vite writes the production sit
 - `src/motion-runtime.ts`: deferred scroll and pointer interactions.
 - `scripts/build-proof-manifest.mjs`: recursive media discovery.
 - `public/proof/<slug>/`: project images and compressed recordings.
-- `netlify.toml`: Netlify build, Node/pnpm versions and hashed-asset caching.
 - `amplify.yml`: Node 22 deployment build for AWS Amplify.
 
 ## Add proof
@@ -61,10 +60,11 @@ Project source links and code provenance are maintained in `src/data/projects.ts
 
 ## Deployment
 
-Netlify publishes the personal portfolio from this repository's `main` branch using `netlify.toml`, Node 22, pnpm and the compiled `dist` output. Hashed assets receive immutable caching. AWS Amplify uses `amplify.yml` and retains the hackathon URL.
+AWS Amplify builds the `main` branch using `amplify.yml`, Node 22 and pnpm, then publishes `dist`. Connect this repository in the Amplify console and select `main`. To keep the existing live URL, update the repository connection of the existing Amplify app; creating a new app assigns a different URL. No AWS credentials belong in this repository.
 
 Builds and browser verification are separate checks. See `verification/`, [current status](current_status.md) and [architecture](architecture.md) for recorded checks and their scope.
 
 ## Repository hygiene and license
 
 Keep credentials, `.env` files, private keys, personal runtime data, model weights and large binaries out of Git. Public proof media must be suitable for publication. This repository uses the [MIT license](LICENSE).
+

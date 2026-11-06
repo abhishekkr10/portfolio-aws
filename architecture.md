@@ -40,3 +40,7 @@ Cursor: motion-runtime owns pointer-transparent dot, follower ring and radial gl
 
 
 Current personal host: Netlify at https://abhishekkrsingh-portfolio.netlify.app/, connected to portfolio/main. netlify.toml builds with Node 22 and pnpm, publishes dist and caches only hashed assets immutably. AWS Amplify remains the challenge host.
+
+## AWS repository — 2026-11-06
+This repository is cloned from abhishekkr10/portfolio with its history and assets preserved. Its target is https://main.d3uqlqzdn1kqb0.amplifyapp.com/ using amplify.yml. Earlier hosting notes describe the original repository.
+

@@ -92,3 +92,7 @@ Personal portfolio moves to https://abhishekkrsingh-portfolio.netlify.app/. Adde
 
 
 5 November: Made Netlify the sole published personal portfolio URL. Removed retired personal URLs from current documentation; refreshed the supplied resume hyperlink without changing its layout. Existing AWS hosting remains operational for the challenge.
+
+## AWS repository — 2026-11-06
+Cloned the original portfolio into the dedicated portfolio-aws repository, retaining source, proof media, license and history. README links and deployment guidance now target AWS Amplify. Earlier entries are historical records of the original repository.
+
